@@ -35,6 +35,9 @@ const Dashboard = () => {
     <div className="dashboard">
       <header className="dashboard-header">
         <h1>Movie Collection</h1>
+        <button className="add-movie-btn border-4 border-black p-2 rounded-lg bg-pink-500" onClick={() => navigate('/add-movie')}>
+          Add Movie
+        </button>
       </header>
       <div className="movie-list">
         {movies.map((movie) => (
